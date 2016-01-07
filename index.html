@@ -5,10 +5,19 @@
 	<meta charset="utf-8">
 
 	<title>Callum Hooper</title>
-
+	
 	<link href="styles/styles.css" rel="stylesheet" type="text/css">
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("button").click(function(){
+				$("ul").hide();
+			});
+		});
+	</script>
+	
   </head>
   
   
@@ -29,6 +38,9 @@
 		<li>Output</li>
 		
 	</ul>
+
+	<button>Click me</button>
+
 	
 	 <img src="images/paper-plane.png" alt="Paper Plane" >
 	
