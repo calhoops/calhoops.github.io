@@ -1,0 +1,106 @@
+/* CSS style sheet */
+
+
+html {
+    overflow-y: scroll;			/*Used to ignore scroll bar*/
+		max-width: 1350px; 
+	margin: auto;
+ 
+}
+
+body{
+	background-color: #FFE;
+	margin: auto;
+	padding: 50px;
+	font-family: roboto;
+	font-style: normal;
+	padding-top: 20px;
+	
+}
+
+/*headings*/
+h1{
+	text-align: Left;
+}
+
+h2{
+
+}
+
+h3{
+	font-size: 30px;
+	padding-bottom: 0px;
+
+}
+
+
+/*lists*/
+
+ul{
+	font-size: 15px;
+}
+
+ol{
+	font-size: 15px;
+}
+
+
+/*content*/
+
+img{
+	border: 1px solid black;
+	border-radius: 5px;
+	width: 60%;
+	height: auto;
+	max-width: 500px
+
+}
+
+a{
+	color: #000;
+}
+
+.activelink{
+	font-style: italic;
+}
+
+/* divs */
+
+.content{
+	border-style: solid;
+	margin: left;
+	width: 100%;
+	border-width: thin;
+	border-left: hidden;
+	border-right: hidden;
+	text-align: left;
+}
+
+.imgcontainer{
+	padding: 5px;
+	padding-left: 70px;
+	text-align: left;
+}
+
+.heading{
+
+	text-align: center;
+	border-style: solid;
+	width: 100%;
+	border-width: normal;
+	border-left: hidden;
+	border-right: hidden;
+	border-bottom: hidden;
+}
+
+.endlinks{
+
+	text-align: center;
+	font-style: normal;
+	border-style: solid;
+	width: 100%;
+	border-width: normal;
+	border-left: hidden;
+	border-right: hidden;
+	border-top: hidden;
+}
