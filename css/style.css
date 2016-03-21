@@ -1,106 +1,267 @@
-/* CSS style sheet */
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
 
+
+/******************************************
+/* SETUP
+/*******************************************/
 
 html {
-    overflow-y: scroll;			/*Used to ignore scroll bar*/
-		max-width: 1350px; 
-	margin: auto;
- 
+    overflow-y: scroll;     /*Used to ignore scroll bar*/
+  max-width: 600px;      /*Used to set max page width*/
+  margin: auto;
+  background-color: #000
+ }
+
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
 }
 
-body{
-	background-color: #FFE;
-	margin: auto;
-	padding: 50px;
-	font-family: roboto;
-	font-style: normal;
-	padding-top: 20px;
-	
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
 }
 
-/*headings*/
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: 'Open Sans', sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+header{
+    width: 100%;
+    margin: auto;
+    height: 350px;
+    background: url(../images/header_bg.jpg) no-repeat center top rgb(134,141,157);
+    background-size: cover;
+    padding-top: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+footer {
+  background-size: cover;
+  background-color: #121212;
+  text-align: center;
+  padding-top: 20px;
+}
+
+section{
+  width: 100%;
+  margin: auto;
+  background-size: cover;
+}
+
+.head_open{
+  text-align: center;
+}
+
+.head_open p{
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+
+.button{
+  margin: auto;
+  height: 34px;
+  border-radius: 5px;
+  padding-top: 9px;
+  width: 150px;
+  background-color: #f9e42e;
+  text-align: center;
+  color: #033048;
+  font-size: 12px;
+  font-weight: 800; 
+}  
+
+
+
+/******************************************
+/* Section Formatting 
+/*******************************************/
+
+
+
+.sec_benefits{
+  height: 300px;
+  background-color: #f0efef;
+  color: #606161;
+  padding-left: 60px;
+  padding-right: 240px;
+  padding-top: 40px;
+
+}
+
+.sec_benefits p{
+  height: 80px;
+  font-size: 13px;
+  font-weight: 300;
+  padding-left: 0px;
+    padding-top: 20px;
+}
+
+
+.sec_benefits ul{
+  height: 80px;
+  list-style-type: circle;
+  font-size: 13px;
+  font-weight: 300;
+  padding-left: 40px;
+  padding-right: 50px;
+
+}  
+
+
+.sec_quote{
+  height: 190px;
+  background: url(../images/testimonial_bg.jpg) no-repeat center top rgb(134,141,157);
+  background-size: cover;
+  text-align: center;
+  font-size: 18px;
+  padding-left: 140px;
+  padding-right: 140px;
+  padding-top: 30px;
+}
+
+.quote1{
+  color: #fff;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.quote2{
+  color: #fff;
+  font-weight: 600;
+  padding-top: 10px;
+}
+
+
+.sec_signup{
+  background-color: #f9e42e;
+  padding: 15px;
+}
+
+.sec_signup p{
+  margin: auto;
+  height: 34px;
+  border-radius: 5px;
+  padding-top: 8px;
+  width: 150px;
+  background-color: #033048;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 800; 
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
 h1{
-	text-align: Left;
+  font-size: 24px;
+  font-weight: 800;
+  color: #ffffff;
 }
 
 h2{
-
+  font-size: 20px;
+  font-weight: 600;
+  color: #033048;
 }
 
 h3{
-	font-size: 30px;
-	padding-bottom: 0px;
+  font-size: 24px;
+  font-weight: 800;
+  color: #f9e42e;
+  padding-bottom: 20px;
+ }
 
+footer p{
+  font-size: 9px;
+  font-weight: 600;
+  color: #606161;
+  padding-bottom: 30px;
+  padding-top: 20px;
+}
+
+footer img{
+  margin: 10px;
+  height: 20px;
+  width: auto;
 }
 
 
-/*lists*/
+/*
 
-ul{
-	font-size: 15px;
-}
+benefits background color: #f0efef
+yellow: #f9e42e
+dark blue: #033048
+light grey: #606161
+almost black: #121212
 
-ol{
-	font-size: 15px;
-}
+Font: Open Sans (Google Font: https://www.google.com/fonts#UsePlace:use/Collection:Open+Sans)
+Weight: Light, Light Italic, Semibold, Extrabold
+
+"Relaxr" - Extra bold, 24px
+"Get piece of mind with a single tap" - Semibold, 24px
+"Get it Now" - Extra bold, 14px. 5px border radius
+"Benefits" - Semibold, 20px
+"The perfect personal assistant. Relaxr does your job for you so you can enjoy life as it is meant to be." - Light, 13px
+• Schedule meetings for you
+• Excel automation to complete your work for you
+• Responds to emails on your behalf
+• Does all your work for you with our revolutionary AI technology" - Light, 13px
+
+"“Relaxr changed my life. I’ve been able to travel the world, spend limited time working and my boss keeps thanking me for crushing work.”" - Light Italic, 18px
+"- Amanda, Intuit " - semibold, 18px
+
+"Sign Up Now!" - extra bold, 12px, 5px border radius
+
+Relaxr - extra bold, 24px
+"Copyright 2015. Relaxr." - 9px, semibold
+
+*/
 
 
-/*content*/
-
-img{
-	border: 1px solid black;
-	border-radius: 5px;
-	width: 60%;
-	height: auto;
-	max-width: 500px
-
-}
-
-a{
-	color: #000;
-}
-
-.activelink{
-	font-style: italic;
-}
-
-/* divs */
-
-.content{
-	border-style: solid;
-	margin: left;
-	width: 100%;
-	border-width: thin;
-	border-left: hidden;
-	border-right: hidden;
-	text-align: left;
-}
-
-.imgcontainer{
-	padding: 5px;
-	padding-left: 70px;
-	text-align: left;
-}
-
-.heading{
-
-	text-align: center;
-	border-style: solid;
-	width: 100%;
-	border-width: normal;
-	border-left: hidden;
-	border-right: hidden;
-	border-bottom: hidden;
-}
-
-.endlinks{
-
-	text-align: center;
-	font-style: normal;
-	border-style: solid;
-	width: 100%;
-	border-width: normal;
-	border-left: hidden;
-	border-right: hidden;
-	border-top: hidden;
-}
